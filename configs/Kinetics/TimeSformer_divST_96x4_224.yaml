@@ -5,6 +5,8 @@ TRAIN:
   EVAL_PERIOD: 5
   CHECKPOINT_PERIOD: 5
   AUTO_RESUME: True
+  CHECKPOINT_FILE_PATH: /path/to/checkpoint
+  FINETUNE: False
 DATA:
   PATH_TO_DATA_DIR: /path/to/kinetics/
   NUM_FRAMES: 96

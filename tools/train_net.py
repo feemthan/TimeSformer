@@ -415,7 +415,7 @@ def train(cfg):
     optimizer = optim.construct_optimizer(model, cfg)
 
     # Load a checkpoint to resume training if applicable.
-    if not cfg.TRAIN.FINETUNE:
+    if cfg.TRAIN.FINETUNE:
       start_epoch = cu.load_train_checkpoint(cfg, model, optimizer)
     else:
       start_epoch = 0
